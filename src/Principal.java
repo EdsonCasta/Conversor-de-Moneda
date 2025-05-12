@@ -19,5 +19,9 @@ public class Principal {
 
         double option = write.nextDouble();
         System.out.println("Ingresa el valor a convertir: ");
+
+        ApiQuery api = new ApiQuery();
+        double tasa = api.getExchangeRate("COP", "USD");
+        System.out.println("Tasa actual: " + tasa);
     }
 }
