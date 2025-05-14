@@ -6,7 +6,7 @@ public class CurrencyConverter {
         double rate = api.getExchangeRate(from, to);
         if (rate != 0) {
             double result = rate * amount;
-            System.out.printf("El valor convertido de %.2f %s a %s es: %.2f%n", amount, from, to, result);
+            System.out.println("El valor de: " + amount + "\nEquivale a: " + result);
         } else {
             System.out.println("No fue posible realizar la conversión");
         }
